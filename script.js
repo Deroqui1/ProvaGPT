@@ -7,7 +7,7 @@ inputQuestion.addEventListener("keypress", (e) =>{
     SendQuestion();
 })
  const API = 
- "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"
+ "Insira Sua Api Do Chat GPT Aqui"
 
 function SendQuestion() {
     var sQuestion = inputQuestion.value;
@@ -55,3 +55,19 @@ function SendQuestion() {
 
     result.scrolltop = result.scrollHeight;
 }
+const imgs = document.querySelector("#img");
+const img = Array.from(document.querySelectorAll("#img img"));
+
+let idc = 0;
+
+function carrossel() {
+  idc++;
+
+  if (idc > img.length - 1) {
+    idc = 0;
+  }
+
+  imgs.style.transform = `translateX(${-idc * 200}px)`;
+}
+
+setInterval(carrossel, 1800);
