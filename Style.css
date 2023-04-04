@@ -35,3 +35,25 @@ textarea {
 textarea:focus {
     border: 1px solid red;
 }
+
+.carrossel {
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform:  translateX(50%);
+}
+
+img{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+
+
